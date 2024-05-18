@@ -11,6 +11,7 @@ builder.Services.AddDbContext<SalesWebMVCContext>(options =>
 
 builder.Services.AddScoped<SeedingService>();
 builder.Services.AddScoped<SellersService>();
+builder.Services.AddScoped<DepartmentService>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews().AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null);
